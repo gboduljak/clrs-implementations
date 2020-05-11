@@ -1,4 +1,5 @@
 # CLRS Implementations
+
 This is a repository of pseudocode discussed in the main text of a classic - Introduction to Algorithms, known as CLRS.
 All implementations are written in C.
 
@@ -15,4 +16,4 @@ Here is a summary of pseudocode implemented so far:
   - Maximum Subarray (Divide and Conquer, BruteForce)
 - **Sorting and Order Statistics** (Chapters 6,7,8)
   - Heap with all discussed operations [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/heap.c)
-  - Heapsort [🔗](  https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/heap.c)
+  - Heapsort [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/heap.c)

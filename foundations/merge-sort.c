@@ -3,8 +3,7 @@
 
 #define infinity 1 << 30
 
-void Merge(int *A, int p, int q, int r)
-{
+void Merge(int *A, int p, int q, int r) {
   int n1 = q - p + 1;
   int n2 = r - q;
 
@@ -23,15 +22,11 @@ void Merge(int *A, int p, int q, int r)
   i = 0;
   j = 0;
 
-  for (k = p; k <= r; k++)
-  {
-    if (L[i] <= R[j])
-    {
+  for (k = p; k <= r; k++) {
+    if (L[i] <= R[j]) {
       A[k] = L[i];
       i++;
-    }
-    else
-    {
+    } else {
       A[k] = R[j];
       j++;
     }
@@ -41,8 +36,7 @@ void Merge(int *A, int p, int q, int r)
   free(R);
 }
 
-void MergeSort(int *A, int lo, int hi)
-{
+void MergeSort(int *A, int lo, int hi) {
   if (lo == hi)
     return;
   int mid = (lo + hi) / 2;
@@ -51,8 +45,7 @@ void MergeSort(int *A, int lo, int hi)
   Merge(A, lo, mid, hi);
 }
 
-int main()
-{
+int main() {
   int length;
   scanf("%d", &length);
   int i;

@@ -1,10 +1,9 @@
-#include <stdlib.h>
-#include <string.h>
 #include "heap.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-void Swap(int *A, int i, int j)
-{
+void Swap(int *A, int i, int j) {
   int temp;
   temp = A[i];
   A[i] = A[j];
@@ -12,8 +11,7 @@ void Swap(int *A, int i, int j)
 }
 
 int Max(heap *heap) { return heap->a[0]; }
-int ExtractMax(heap *heap)
-{
+int ExtractMax(heap *heap) {
   int max = Max(heap);
 
   Swap(heap->a, 0, heap->heap_size - 1);
@@ -22,8 +20,7 @@ int ExtractMax(heap *heap)
   return max;
 }
 
-heap *AllocateMaxHeap(int size)
-{
+heap *AllocateMaxHeap(int size) {
   heap *heap = malloc(sizeof heap);
   heap->a = malloc(size * sizeof(int));
   heap->heap_size = 0;
@@ -31,14 +28,12 @@ heap *AllocateMaxHeap(int size)
   return heap;
 }
 
-void DestroyMaxHeap(heap *heap)
-{
+void DestroyMaxHeap(heap *heap) {
   free(heap->a);
   free(heap);
 }
 
-void MaxHeapify(heap *heap, int i)
-{
+void MaxHeapify(heap *heap, int i) {
   int l, r, largest;
   int *a = heap->a;
 
@@ -60,26 +55,22 @@ void MaxHeapify(heap *heap, int i)
   MaxHeapify(heap, largest);
 }
 
-void BuildMaxHeap(heap *heap)
-{
+void BuildMaxHeap(heap *heap) {
   int i;
   i = heap->heap_size / 2;
   while (i >= 0)
     MaxHeapify(heap, i), i--;
 }
 
-void IncreaseKey(heap *heap, int i)
-{
+void IncreaseKey(heap *heap, int i) {
   int *a = heap->a;
-  while (a[Parent(i)] < a[i])
-  {
+  while (a[Parent(i)] < a[i]) {
     Swap(a, i, Parent(i));
     i = Parent(i);
   }
 }
 
-void MaxHeapInsert(heap *heap, int key)
-{
+void MaxHeapInsert(heap *heap, int key) {
   heap->a[heap->heap_size] = key;
   IncreaseKey(heap, heap->heap_size);
   heap->heap_size++;
@@ -89,8 +80,7 @@ inline int Parent(int i) { return i >> 1; }
 inline int Left(int i) { return (i << 1) + 1; }
 inline int Right(int i) { return (i << 1) + 2; }
 
-void HeapSort(int *A, int size)
-{
+void HeapSort(int *A, int size) {
   heap *heap = malloc(sizeof heap);
   heap->a = A;
   heap->heap_size = size;

@@ -1,11 +1,10 @@
+#include "maximum-subarray.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <string.h>
-#include "maximum-subarray.h"
+#include <time.h>
 
-int main()
-{
+int main() {
   int length;
   scanf("%d", &length);
   int i;
@@ -17,8 +16,7 @@ int main()
 
   int cross_over = 0;
 
-  for (i = 1; i < length; i++)
-  {
+  for (i = 1; i < length; i++) {
     struct timespec start_bf, end_bf, start_d_c, end_d_c;
     clock_gettime(CLOCK_MONOTONIC_RAW, &start_bf);
     subarray_info result_bruteforce = FindMaximumSubarrayBruteforce(A, 0, i);
@@ -31,11 +29,12 @@ int main()
     long elapsed_bf = 1000000 * (end_bf.tv_nsec - start_bf.tv_nsec);
     long elapsed_d_c = 1000000 * (end_d_c.tv_nsec - start_d_c.tv_nsec);
 
-    printf("Divide and Conquer: %ld ms, Bruteforce: %ld ms \n", elapsed_d_c, elapsed_bf);
+    printf("Divide and Conquer: %ld ms, Bruteforce: %ld ms \n", elapsed_d_c,
+           elapsed_bf);
 
-    if (elapsed_d_c <= elapsed_bf && !cross_over)
-    {
-      printf("Divide and Conquer implementation becomes faster when n=%d\n", i + 1);
+    if (elapsed_d_c <= elapsed_bf && !cross_over) {
+      printf("Divide and Conquer implementation becomes faster when n=%d\n",
+             i + 1);
       cross_over = 1;
       break;
     }

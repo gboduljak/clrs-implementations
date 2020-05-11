@@ -1,9 +1,8 @@
+#include "maximum-subarray.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "maximum-subarray.h"
 
-int main()
-{
+int main() {
   int length;
   scanf("%d", &length);
   int i;
@@ -22,7 +21,8 @@ int main()
   for (i = 0; i < length - 1; i++)
     printf("%d ", A[i]);
   printf("\n");
-  printf("Maximum subarray: low=%d hi=%d sum=%d\n", result.low, result.high, result.sum);
+  printf("Maximum subarray: low=%d hi=%d sum=%d\n", result.low, result.high,
+         result.sum);
   printf("Max profit is %d \n", result.sum);
   free(A);
 }

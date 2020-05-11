@@ -5,17 +5,12 @@
 
 #define infinity 1 << 16
 
-int max(int a, int b)
-{
-  return a < b ? b : a;
-}
+int max(int a, int b) { return a < b ? b : a; }
 
-subarray_info FindMaximumSubarray(int *A, int low, int high)
-{
+subarray_info FindMaximumSubarray(int *A, int low, int high) {
   subarray_info result;
 
-  if (low == high)
-  {
+  if (low == high) {
     result.low = low;
     result.high = high;
     result.sum = A[low];
@@ -36,8 +31,7 @@ subarray_info FindMaximumSubarray(int *A, int low, int high)
   return crossing;
 }
 
-subarray_info FindMaximumCrossingSubarray(int *A, int low, int mid, int high)
-{
+subarray_info FindMaximumCrossingSubarray(int *A, int low, int mid, int high) {
   subarray_info result;
 
   int sum;
@@ -48,11 +42,9 @@ subarray_info FindMaximumCrossingSubarray(int *A, int low, int mid, int high)
 
   sum = 0;
   i = mid;
-  while (i >= low)
-  {
+  while (i >= low) {
     sum += A[i];
-    if (sum > left_sum)
-    {
+    if (sum > left_sum) {
       left_sum = sum;
       max_left_ix = i;
     }
@@ -61,11 +53,9 @@ subarray_info FindMaximumCrossingSubarray(int *A, int low, int mid, int high)
 
   sum = 0;
   i = mid + 1;
-  while (i <= high)
-  {
+  while (i <= high) {
     sum += A[i];
-    if (sum > right_sum)
-    {
+    if (sum > right_sum) {
       right_sum = sum;
       max_right_ix = i;
     }
@@ -79,8 +69,7 @@ subarray_info FindMaximumCrossingSubarray(int *A, int low, int mid, int high)
   return result;
 }
 
-subarray_info FindMaximumSubarrayBruteforce(int *A, int low, int high)
-{
+subarray_info FindMaximumSubarrayBruteforce(int *A, int low, int high) {
   subarray_info result;
   result.sum = -(infinity);
   int i, j, sum;
@@ -91,13 +80,10 @@ subarray_info FindMaximumSubarrayBruteforce(int *A, int low, int high)
   for (i = 1; i <= high; i++)
     P[i] = P[i - 1] + A[i];
 
-  for (i = 0; i <= high; i++)
-  {
-    for (j = i + 1; j <= high; j++)
-    {
+  for (i = 0; i <= high; i++) {
+    for (j = i + 1; j <= high; j++) {
       sum = i >= 1 ? P[j] - P[i - 1] : P[j];
-      if (sum > result.sum)
-      {
+      if (sum > result.sum) {
         result.sum = sum;
         result.low = i;
         result.high = j;

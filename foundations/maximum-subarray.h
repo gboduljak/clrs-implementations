@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct subarray_info
-{
+typedef struct subarray_info {
   int low;
   int high;
   int sum;

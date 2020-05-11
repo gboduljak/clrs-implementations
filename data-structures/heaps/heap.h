@@ -1,5 +1,4 @@
-typedef struct
-{
+typedef struct {
   int heap_size;
   int size;
   int *a;
