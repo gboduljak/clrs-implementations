@@ -1,0 +1,52 @@
+# Based on @asimilon's: https://github.com/asimilon/clangformat
+#!/bin/bash
+
+function usage() {
+	cat << END
+Usage: clangformat <directory> [--test]
+Use --test to show which files would be formatted.
+END
+}
+
+if [[ ! -n "$1" ]]; then
+	echo "Provide a directory to clangformat!"
+	usage
+	exit 1
+fi
+
+if [[ $1 == "--help" ]]; then
+	usage
+	exit 0
+fi
+
+CLANGFMT="clang-format"
+
+if [[ -f ".clang-format-ignore" ]]; then
+	EXCLUDES=`cat .clang-format-ignore`
+	echo Excluding : $EXCLUDES
+else
+	EXCLUDES=""
+fi
+
+for F in `find "$1"`; do
+	DOFMT=TRUE
+	if [[ -n $EXCLUDES ]]; then
+		while read -r EXCL; do
+			if [[ -n $EXCL && $EXCL != /#* ]]; then
+				if [[ $F == $EXCL ]]; then
+					DOFMT=FALSE
+					break
+				fi
+			fi
+		done <<< "$EXCLUDES"
+	fi
+	if [[ $DOFMT == TRUE ]]; then
+		if [[ -f $F ]]; then
+			if [[ $2 == "--test" ]]; then
+				echo "Would format $F"
+			else
+				$CLANGFMT -i -verbose -style=file "$F"
+			fi
+		fi
+	fi
+done

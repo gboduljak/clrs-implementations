@@ -1,0 +1,5 @@
+sh ./clang-format-all foundations
+sh ./clang-format-all sorting
+sh ./clang-format-all data-structures
+sh ./clang-format-all dynamic-programming
+sh ./clang-format-all graph-algorithms
