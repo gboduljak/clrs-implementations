@@ -1,7 +1,11 @@
-#include "heap.h"
+#include "max-heap.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+int Parent(int i) { return i >> 1; }
+int Left(int i) { return (i << 1) + 1; }
+int Right(int i) { return (i << 1) + 2; }
 
 void Swap(int *A, int i, int j) {
   int temp;
@@ -75,10 +79,6 @@ void MaxHeapInsert(heap *heap, int key) {
   IncreaseKey(heap, heap->heap_size);
   heap->heap_size++;
 }
-
-inline int Parent(int i) { return i >> 1; }
-inline int Left(int i) { return (i << 1) + 1; }
-inline int Right(int i) { return (i << 1) + 2; }
 
 void HeapSort(int *A, int size) {
   heap *heap = malloc(sizeof heap);

@@ -15,11 +15,7 @@ int main() {
     scanf("%d %d", &ids[i], &keys[i]);
   }
 
-  length = 12;
-  int ids[12] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-  int keys[12] = {14, 27, 17, 16, 13, 10, 1, 5, 12, 8, 12, 0};
-
-  max_priority_queue *pq = BuildMaxPq(ids, keys, length, 100);
+  priority_queue *pq = BuildMaxPq(ids, keys, length, 100);
 
   MaxPqInsert(pq, 12, 43);
   MaxPqInsert(pq, 13, 54);
@@ -27,7 +23,7 @@ int main() {
   MaxPqIncreaseKey(pq, 4, 28);
 
   for (i = 0; i < length; i++) {
-    pq_element *el = MaxPqExtractMax(pq);
+    priority_queue_element *el = MaxPqExtractMax(pq);
     printf("id:%d key:%d\n", el->id, el->key);
   }
 

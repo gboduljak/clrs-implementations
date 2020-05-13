@@ -1,21 +1,11 @@
-typedef struct pq_element {
-  int id;
-  int key;
-} pq_element;
 
-typedef struct max_priority_queue {
-  int *heap;
-  int *position_of_id;
-  int *id_at_position;
-  int heap_size;
-  int size;
-} max_priority_queue;
+#include "priority-queue.h"
+#include "priority_queue_element.h"
 
-max_priority_queue *AllocateMaxPq(int size);
+priority_queue *AllocateMaxPq(int size);
 void DestroyMaxPq();
 
-max_priority_queue *BuildMaxPq(int *ids, int *keys, int input_size,
-                               int heap_size);
-pq_element *MaxPqInsert(max_priority_queue *pq, int id, int key);
-void MaxPqIncreaseKey(max_priority_queue *pq, int i, int new_key);
-pq_element *MaxPqExtractMax(max_priority_queue *pq);
+priority_queue *BuildMaxPq(int *ids, int *keys, int input_size, int heap_size);
+priority_queue_element *MaxPqInsert(priority_queue *pq, int id, int key);
+void MaxPqIncreaseKey(priority_queue *pq, int i, int new_key);
+priority_queue_element *MaxPqExtractMax(priority_queue *pq);

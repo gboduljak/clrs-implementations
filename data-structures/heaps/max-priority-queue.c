@@ -6,9 +6,8 @@ int Parent(int i) { return i >> 1; }
 int Left(int i) { return (i << 1) + 1; }
 int Right(int i) { return (i << 1) + 2; }
 
-max_priority_queue *AllocateMaxPq(int size) {
-  max_priority_queue *pq =
-      (max_priority_queue *)malloc(sizeof(max_priority_queue));
+priority_queue *AllocateMaxPq(int size) {
+  priority_queue *pq = (priority_queue *)malloc(sizeof(priority_queue));
   pq->heap = (int *)malloc(sizeof(int) * size);
   pq->position_of_id = (int *)malloc(sizeof(int) * size);
   pq->id_at_position = (int *)malloc(sizeof(int) * size);
@@ -17,14 +16,14 @@ max_priority_queue *AllocateMaxPq(int size) {
   return pq;
 }
 
-void DestroyMaxPq(max_priority_queue *pq) {
+void DestroyMaxPq(priority_queue *pq) {
   free(pq->heap);
   free(pq->position_of_id);
   free(pq->id_at_position);
   free(pq);
 }
 
-void SwapKeys(max_priority_queue *pq, int i, int j) {
+void SwapKeys(priority_queue *pq, int i, int j) {
   int *heap = pq->heap;
   int *id_at_position = pq->id_at_position;
   int *position_of_id = pq->position_of_id;
@@ -43,7 +42,7 @@ void SwapKeys(max_priority_queue *pq, int i, int j) {
   heap[j] = temp;
 }
 
-void MaxPqHeapify(max_priority_queue *pq, int i) {
+void MaxPqHeapify(priority_queue *pq, int i) {
   int l, r, largest;
   int *a = pq->heap;
 
@@ -65,7 +64,7 @@ void MaxPqHeapify(max_priority_queue *pq, int i) {
   MaxPqHeapify(pq, largest);
 }
 
-void MaxPqSiftUp(max_priority_queue *pq, int i) {
+void MaxPqSiftUp(priority_queue *pq, int i) {
   int *a = pq->heap;
   while (a[Parent(i)] < a[i]) {
     SwapKeys(pq, i, Parent(i));
@@ -73,14 +72,16 @@ void MaxPqSiftUp(max_priority_queue *pq, int i) {
   }
 }
 
-void MaxPqIncreaseKey(max_priority_queue *pq, int id, int new_key) {
+void MaxPqIncreaseKey(priority_queue *pq, int id, int new_key) {
   int element_position = pq->position_of_id[id];
   pq->heap[element_position] = new_key;
   MaxPqSiftUp(pq, element_position);
+  MaxPqHeapify(pq, element_position);
 }
 
-pq_element *MaxPqInsert(max_priority_queue *pq, int id, int key) {
-  pq_element *element = (pq_element *)malloc(sizeof(pq_element));
+priority_queue_element *MaxPqInsert(priority_queue *pq, int id, int key) {
+  priority_queue_element *element =
+      (priority_queue_element *)malloc(sizeof(priority_queue_element));
   element->id = id;
   element->key = key;
   pq->position_of_id[id] = pq->heap_size;
@@ -92,8 +93,9 @@ pq_element *MaxPqInsert(max_priority_queue *pq, int id, int key) {
   return element;
 }
 
-pq_element *MaxPqExtractMax(max_priority_queue *pq) {
-  pq_element *element = (pq_element *)malloc(sizeof(pq_element));
+priority_queue_element *MaxPqExtractMax(priority_queue *pq) {
+  priority_queue_element *element =
+      (priority_queue_element *)malloc(sizeof(priority_queue_element));
   element->id = pq->id_at_position[0];
   element->key = pq->heap[0];
 
@@ -104,9 +106,8 @@ pq_element *MaxPqExtractMax(max_priority_queue *pq) {
   return element;
 }
 
-max_priority_queue *BuildMaxPq(int *ids, int *keys, int input_size,
-                               int pq_size) {
-  max_priority_queue *pq = AllocateMaxPq(pq_size);
+priority_queue *BuildMaxPq(int *ids, int *keys, int input_size, int pq_size) {
+  priority_queue *pq = AllocateMaxPq(pq_size);
   pq->heap_size = input_size;
   pq->size = input_size;
 
