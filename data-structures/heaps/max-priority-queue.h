@@ -5,8 +5,8 @@ typedef struct pq_element {
 
 typedef struct max_priority_queue {
   int *heap;
-  int *id_position;
-  int *position_id;
+  int *position_of_id;
+  int *id_at_position;
   int heap_size;
   int size;
 } max_priority_queue;
