@@ -19,4 +19,4 @@ Here is a summary of pseudocode implemented so far:
   - Heapsort [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
   - Max Priority Queue [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-priority-queue.c)
   - Min Priority Queue [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/min-priority-queue.c)
-      - Implemented as MaxHeap with inverted keys
+      - Implemented as Max Priority Queue with inverted keys
