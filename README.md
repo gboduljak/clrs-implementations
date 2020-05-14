@@ -21,3 +21,4 @@ Here is a summary of pseudocode implemented so far:
   - Min Priority Queue [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/min-priority-queue.c)
       - Implemented as Max Priority Queue with inverted keys
   - QuickSort (non-randomised) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quicksort/quicksort.c)
+  - QuickSort (randomised) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quicksort/randomised-quicksort.c)

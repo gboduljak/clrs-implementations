@@ -1,11 +1,5 @@
 #include "quicksort.h"
 
-void Swap(int *A, int i, int j) {
-  int temp = A[i];
-  A[i] = A[j];
-  A[j] = temp;
-}
-
 int Partition(int *A, int p, int r) {
   int x = A[r];
   int i = p - 1;
