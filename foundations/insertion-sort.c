@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "insertion-sort.h"
 
 void InsertionSort(int *A, int length) {
   int i, j, key;
@@ -12,17 +11,4 @@ void InsertionSort(int *A, int length) {
     }
     A[i + 1] = key;
   }
-}
-
-int main() {
-  int length;
-  scanf("%d", &length);
-  int i;
-  int *A = malloc(sizeof(int) * length);
-  for (i = 0; i < length; i++)
-    scanf("%d", &A[i]);
-  InsertionSort(A, length);
-  for (i = 0; i < length; i++)
-    printf("%d ", A[i]);
-  free(A);
 }
