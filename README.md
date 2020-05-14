@@ -16,7 +16,8 @@ Here is a summary of pseudocode implemented so far:
   - Maximum Subarray (Divide and Conquer, BruteForce)
 - **Sorting and Order Statistics** (Chapters 6,7,8)
   - Max Heap [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
-  - Heapsort [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
+  - HeapSort [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
   - Max Priority Queue [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-priority-queue.c)
   - Min Priority Queue [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/min-priority-queue.c)
       - Implemented as Max Priority Queue with inverted keys
+  - QuickSort (non-randomised) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quicksort/quicksort.c)
