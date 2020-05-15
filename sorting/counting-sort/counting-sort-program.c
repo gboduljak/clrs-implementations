@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
   int length;
   scanf("%d", &length);
   int i;
@@ -16,4 +15,5 @@ int main()
   for (i = 0; i < length; i++)
     printf("%d ", B[i]);
   free(A);
+  free(B);
 }
