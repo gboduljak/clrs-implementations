@@ -22,3 +22,4 @@ Here is a summary of pseudocode implemented so far:
       - Implemented as Max Priority Queue with inverted keys
   - QuickSort (non-randomised) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quicksort/quicksort.c)
   - QuickSort (randomised) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quicksort/randomised-quicksort.c)
+  - CountingSort  [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quicksort/counting-sort.c)
