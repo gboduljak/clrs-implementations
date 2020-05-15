@@ -1,1 +1,1 @@
-int *CountingSort(int *A, int length);
+void CountingSort(int *A, int length);

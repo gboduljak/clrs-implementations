@@ -10,10 +10,9 @@ int main() {
   for (i = 0; i < length; i++)
     scanf("%d", &A[i]);
 
-  int *B = CountingSort(A, length);
+  CountingSort(A, length);
 
   for (i = 0; i < length; i++)
-    printf("%d ", B[i]);
+    printf("%d ", A[i]);
   free(A);
-  free(B);
 }
