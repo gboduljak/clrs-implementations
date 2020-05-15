@@ -1,18 +1,16 @@
 #include "counting-sort.h"
-#include <stdlib.h>
-#include <string.h>
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int Digit(int num, int d)
-{
+int Digit(int num, int d) {
   int power = pow(10, d);
   int prev_power = pow(10, d - 1);
   return (num - (num / power) * power) / prev_power;
 }
 
-void CountingSortOnDigit(int *A, int d, int length)
-{
+void CountingSortOnDigit(int *A, int d, int length) {
   int *B = (int *)malloc(sizeof(int) * length);
   int *C = (int *)malloc(sizeof(int) * (10));
   int i, j;
@@ -26,8 +24,7 @@ void CountingSortOnDigit(int *A, int d, int length)
   for (j = 0; j < 10; j++)
     C[j]--;
 
-  for (j = length - 1; j >= 0; j--)
-  {
+  for (j = length - 1; j >= 0; j--) {
     B[C[Digit(A[j], d)]] = A[j];
     C[Digit(A[j], d)]--;
   }

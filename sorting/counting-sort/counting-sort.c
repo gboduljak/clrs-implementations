@@ -19,7 +19,7 @@ void CountingSort(int *A, int length) {
   for (j = length - 1; j >= 0; j--)
     B[C[A[j]]] = A[j], C[A[j]]--;
 
-  for (j = 0; j< length; j++)
+  for (j = 0; j < length; j++)
     A[j] = B[j];
 
   free(C);

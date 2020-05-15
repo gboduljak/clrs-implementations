@@ -1,1 +1,1 @@
-void RadixSort(int* A, int digits, int length);
+void RadixSort(int *A, int digits, int length);

@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
   int length, digits;
   scanf("%d %d", &length, &digits);
 
