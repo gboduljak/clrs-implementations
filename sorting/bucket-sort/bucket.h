@@ -10,4 +10,6 @@ typedef struct bucket {
 bucket *Append(bucket *source, bucket *target);
 bucket *InsertSortBucket(bucket *bucket);
 bucket *AllocateBucket();
+void DestroyRecursively(bucket *bucket);
+
 #endif

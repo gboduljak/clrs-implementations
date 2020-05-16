@@ -1,6 +1,5 @@
 #include "bucket.h"
 #include <stdlib.h>
-
 bucket *Append(bucket *source, bucket *node) {
   if (!source)
     return node;
@@ -10,7 +9,12 @@ bucket *Append(bucket *source, bucket *node) {
   node->previous = NULL;
   return node;
 }
-bucket *AllocateBucket() { return (bucket *)malloc(sizeof(bucket)); }
+bucket *AllocateBucket() {
+  bucket *new = (bucket *)malloc(sizeof(bucket));
+  new->next = NULL;
+  new->previous = NULL;
+  return new;
+}
 bucket *InsertSortBucket(bucket *head) {
   if (!head)
     return head;
@@ -50,4 +54,11 @@ bucket *InsertSortBucket(bucket *head) {
   sorted_tail->previous = NULL;
   free(head);
   return sorted_tail;
+}
+void DestroyRecursively(bucket *bucket) {
+  if (!bucket)
+    return;
+
+  DestroyRecursively(bucket->next);
+  free(bucket);
 }

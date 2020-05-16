@@ -12,8 +12,8 @@ int main() {
     scanf("%lf", &A[i]);
 
   BucketSort(A, length);
-
   for (i = 0; i < length; i++)
     printf("%lf ", A[i]);
+
   free(A);
 }

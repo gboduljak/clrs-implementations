@@ -3,8 +3,8 @@
 #include "math.h"
 #include "stdio.h"
 #include "stdlib.h"
-
 int Hash(double element, int n) { return (int)floor(n * element); }
+
 bucket *Bucketify(double element) {
   bucket *bucket = AllocateBucket();
   bucket->value = element;
@@ -27,5 +27,7 @@ void BucketSort(double *A, int length) {
     bucket *bucket = buckets[i];
     while (bucket)
       A[++k] = bucket->value, bucket = bucket->next;
+    DestroyRecursively(bucket);
   }
+  free(buckets);
 }
