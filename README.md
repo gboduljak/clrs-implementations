@@ -28,6 +28,7 @@ Here is a summary of pseudocode implemented so far:
   - BucketSort [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/bucket-sort/bucket-sort.c)
   - RandomisedSelect aka QuickSelect [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quick-sort/randomised-select.c)
 
-- **Data Structures (Chapters 10, 11, 12, 13)** 
+- **Data Structures (Chapters 10, 11, 12, 13)**
   - Stack (array-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/stack/stack.c)
   - Queue (wraparound array-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/queue/queue.c)
+  - Linked-List (implemented as doubly-linked and circular) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/linked-list/linked-list.c)
