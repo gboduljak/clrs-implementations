@@ -1,8 +1,7 @@
 #include "queue.h"
 #include <stdlib.h>
 
-queue *AllocateQueue(int length)
-{
+queue *AllocateQueue(int length) {
   queue *new = (queue *)malloc(sizeof(queue));
   new->Q = malloc(sizeof(int) * length);
   new->head = 0;
@@ -11,20 +10,19 @@ queue *AllocateQueue(int length)
   return new;
 }
 
-void DeallocateQueue(queue *queue)
-{
+void DeallocateQueue(queue *queue) {
   free(queue->Q);
   free(queue);
 }
 
-int QueueEmpty(queue *queue) { return (queue->head + 1) % queue->length == queue->tail; }
-int QueueFull(queue *queue)
-{
+int QueueEmpty(queue *queue) {
+  return (queue->head + 1) % queue->length == queue->tail;
+}
+int QueueFull(queue *queue) {
   return (queue->tail) % queue->length == queue->head;
 }
 
-void Enqueue(queue *queue, int x)
-{
+void Enqueue(queue *queue, int x) {
   queue->Q[queue->tail] = x;
 
   if (queue->tail == queue->length)
@@ -33,8 +31,7 @@ void Enqueue(queue *queue, int x)
     queue->tail++;
 }
 
-int Dequeue(queue *queue)
-{
+int Dequeue(queue *queue) {
   int x = queue->Q[queue->head];
 
   if (queue->head == queue->length)

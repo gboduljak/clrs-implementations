@@ -1,8 +1,7 @@
 #include "queue.h"
 #include "stdio.h"
 
-int main()
-{
+int main() {
   queue *q = AllocateQueue(7);
   printf("queue empty: %d \n", QueueEmpty(q));
 
