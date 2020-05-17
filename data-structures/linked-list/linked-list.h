@@ -6,6 +6,7 @@ typedef struct linked_list_node {
 
 typedef struct linked_list {
   linked_list_node *nil;
+  int length;
 } linked_list;
 
 linked_list *AllocateLinkedList();

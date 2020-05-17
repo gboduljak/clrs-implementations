@@ -6,6 +6,7 @@ linked_list *AllocateLinkedList() {
   list->nil = malloc(sizeof(linked_list_node));
   list->nil->next = list->nil;
   list->nil->prev = list->nil;
+  list->length = 0;
   return list;
 }
 
@@ -25,6 +26,7 @@ void DellocateLinkedList(linked_list *list) {
 }
 
 linked_list_node *ListInsert(linked_list *list, int x) {
+  list->length++;
   linked_list_node *node = malloc(sizeof(linked_list_node));
   node->key = x;
   node->next = list->nil->next;
@@ -42,6 +44,7 @@ linked_list_node *ListSearch(linked_list *list, int k) {
 }
 
 void ListDelete(linked_list *list, linked_list_node *node) {
+  list->length--;
   node->prev->next = node->next;
   node->next->prev = node->prev;
 }
