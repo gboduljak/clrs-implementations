@@ -1,5 +1,4 @@
-typedef struct binary_search_tree
-{
+typedef struct binary_search_tree {
   int key;
   struct binary_search_tree *left;
   struct binary_search_tree *right;

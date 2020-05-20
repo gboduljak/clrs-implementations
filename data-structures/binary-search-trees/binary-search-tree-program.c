@@ -1,8 +1,7 @@
 #include "binary-search-tree.h"
 #include <stdio.h>
 
-int main()
-{
+int main() {
   binary_search_tree *root = AllocateTree(5);
   root->left = AllocateTree(1);
   root->right = AllocateTree(7);
