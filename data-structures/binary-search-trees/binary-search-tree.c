@@ -2,7 +2,8 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-binary_search_tree *AllocateTree(int k) {
+binary_search_tree *AllocateTree(int k)
+{
   binary_search_tree *root =
       (binary_search_tree *)malloc(sizeof(binary_search_tree));
   root->key = k;
@@ -12,7 +13,8 @@ binary_search_tree *AllocateTree(int k) {
   return root;
 }
 
-void DeallocateTree(binary_search_tree *tree) {
+void DeallocateTree(binary_search_tree *tree)
+{
   if (!tree)
     return;
   DeallocateTree(tree->left);
@@ -20,7 +22,8 @@ void DeallocateTree(binary_search_tree *tree) {
   free(tree);
 }
 
-void InOrderTreeWalk(binary_search_tree *x) {
+void InOrderTreeWalk(binary_search_tree *x)
+{
   if (!x)
     return;
   InOrderTreeWalk(x->left);
@@ -28,7 +31,8 @@ void InOrderTreeWalk(binary_search_tree *x) {
   InOrderTreeWalk(x->right);
 }
 
-binary_search_tree *TreeSearch(binary_search_tree *x, int k) {
+binary_search_tree *TreeSearch(binary_search_tree *x, int k)
+{
   if (!x)
     return x;
   if (x->key == k)
@@ -36,7 +40,8 @@ binary_search_tree *TreeSearch(binary_search_tree *x, int k) {
   return (k < x->key) ? TreeSearch(x->left, k) : TreeSearch(x->right, k);
 }
 
-binary_search_tree *TreeMinimum(binary_search_tree *x) {
+binary_search_tree *TreeMinimum(binary_search_tree *x)
+{
   if (!x)
     return x;
   while (x->left)
@@ -44,7 +49,8 @@ binary_search_tree *TreeMinimum(binary_search_tree *x) {
   return x;
 }
 
-binary_search_tree *TreeMaximum(binary_search_tree *x) {
+binary_search_tree *TreeMaximum(binary_search_tree *x)
+{
   if (!x)
     return x;
   while (x->right)
@@ -52,7 +58,8 @@ binary_search_tree *TreeMaximum(binary_search_tree *x) {
   return x;
 }
 
-binary_search_tree *TreeSuccessor(binary_search_tree *x) {
+binary_search_tree *TreeSuccessor(binary_search_tree *x)
+{
   if (x->right)
     return TreeMinimum(x->right);
   binary_search_tree *y = x->p;
@@ -61,7 +68,8 @@ binary_search_tree *TreeSuccessor(binary_search_tree *x) {
   return y;
 }
 
-binary_search_tree *TreePredecessor(binary_search_tree *x) {
+binary_search_tree *TreePredecessor(binary_search_tree *x)
+{
   if (x->left)
     return TreeMaximum(x->left);
   binary_search_tree *y = x->p;
@@ -70,15 +78,18 @@ binary_search_tree *TreePredecessor(binary_search_tree *x) {
   return y;
 }
 
-void TreeInsert(binary_search_tree *T, binary_search_tree *z) {
+void TreeInsert(binary_search_tree *T, binary_search_tree *z)
+{
   binary_search_tree *y = NULL;
   binary_search_tree *x = T;
-  while (x) {
+  while (x)
+  {
     y = x;
     x = (z->key < x->key) ? x->left : x->right;
   }
   z->p = y;
-  if (!y) {
+  if (!y)
+  {
     *T = *z;
     return;
   }
@@ -89,7 +100,8 @@ void TreeInsert(binary_search_tree *T, binary_search_tree *z) {
 }
 
 int TreeSortIx;
-void TraverseInOrderInto(binary_search_tree *x, int *A) {
+void TraverseInOrderInto(binary_search_tree *x, int *A)
+{
   if (!x)
     return;
   TraverseInOrderInto(x->left, A);
@@ -98,7 +110,8 @@ void TraverseInOrderInto(binary_search_tree *x, int *A) {
   TraverseInOrderInto(x->right, A);
 }
 
-void TreeSort(int *A, int length) {
+void TreeSort(int *A, int length)
+{
   if (!length)
     return;
   int i = 0;
@@ -108,4 +121,38 @@ void TreeSort(int *A, int length) {
   TreeSortIx = 0;
   TraverseInOrderInto(tree, A);
   DeallocateTree(tree);
+}
+
+void Transplant(binary_search_tree *T, binary_search_tree *u, binary_search_tree *v)
+{
+  if (!(u->p))
+  {
+    *T = *v;
+    return;
+  }
+  if (u == u->p->left)
+    u->p->left = v;
+  else
+    u->p->right = v;
+  if (v)
+    v->p = u->p;
+}
+
+void TreeDelete(binary_search_tree *T, binary_search_tree *z)
+{
+  if (z->left == NULL)
+  {
+    Transplant(T, z, z->right);
+    return;
+  }
+  if (z->right == NULL)
+  {
+    Transplant(T, z, z->left);
+    return;
+  }
+  binary_search_tree *y = TreeMinimum(z->right);
+  int temp = y->key;
+  z->key = y->key;
+  y->key = temp;
+  TreeDelete(T, y);
 }
