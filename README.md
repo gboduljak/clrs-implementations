@@ -29,14 +29,15 @@ Here is a summary of pseudocode implemented so far:
   - RandomisedSelect aka QuickSelect [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quick-sort/randomised-select.c)
 
 - **Data Structures (Chapters 10, 11, 12, 13)**
-  - Stack 
+  - Stack
     - (array-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/stack/stack.c)
     - (doubly-linked-list-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/linked-list/stack.c)
-  - Queue 
+  - Queue
     - (wraparound array-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/queue/queue.c)
     - (doubly-linked-list-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/linked-list/queue.c)
   - Linked-List (doubly-linked, circular) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/linked-list/linked-list.c)
   - Hash Table
     - (chaining) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/hash-tables/chaining/hash-table.c)
     - (open-addressing with double-hashing) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/hash-tables/open-addressing/hash-table.c)
-  - Binary Search Tree  [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/binary-search-trees/binary-search-tree.c)
+  - Binary Search Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/binary-search-trees/binary-search-tree.c)
+  - Red Black Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/red-black-trees/red-black-tree.c)

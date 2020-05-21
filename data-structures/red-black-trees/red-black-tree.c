@@ -105,14 +105,13 @@ void RbInsertFixup(rb_tree *T, rb_tree *z) {
           z = z->p;
           RotateLeft(T, z); // (Reduction to (Case 3))
         }
-        z->p->color = black;
+        z->p->color = black; // (Case 3)
         z->p->p->color = red;
         RotateRight(T, z->p->p);
       }
     } else {
       rb_tree *y = z->p->p->left; // famous uncle
 
-      // reverse
       if (y->color == red) // (Case 1), known as red uncle fix
       {
         z->p->p->color = red;
@@ -125,7 +124,7 @@ void RbInsertFixup(rb_tree *T, rb_tree *z) {
           z = z->p;
           RotateRight(T, z); // (Reduction to (Case 3))
         }
-        z->p->color = black;
+        z->p->color = black; // (Case 3)
         z->p->p->color = red;
         RotateLeft(T, z->p->p);
       }
