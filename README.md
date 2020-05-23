@@ -41,3 +41,6 @@ Here is a summary of pseudocode implemented so far:
     - (open-addressing with double-hashing) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/hash-tables/open-addressing/hash-table.c)
   - Binary Search Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/binary-search-trees/binary-search-tree.c)
   - Red Black Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/red-black-trees/red-black-tree.c)
+    - Insertion
+    - Deletion
+    

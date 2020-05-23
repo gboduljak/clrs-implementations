@@ -1,7 +1,8 @@
 #include "red-black-tree.h"
 #include <stdio.h>
 
-int main() {
+int main()
+{
   rb_tree *root = AllocateRbTree(11);
   root->color = black;
 
@@ -42,5 +43,23 @@ int main() {
 
   RbInsert(root, AllocateRbTreeNode(root, 4));
   root = root->root;
+  printf("hardcoded tree \n");
+  RbTraverse(root, root);
+
+  RbDelete(root, two);
+  RbDelete(root, fourteen);
+  RbDelete(root, root);
+  printf("with deleted 2, 14, 7 \n");
+  root = root->root;
+
+  RbTraverse(root, root);
+  RbDelete(root, five);
+  printf("with deleted 5 \n");
+  RbTraverse(root, root);
+
+  printf("with deleted 4 \n");
+  RbDelete(root, RbTreeSearch(root, root, 4));
+
+  RbTraverse(root, root);
   return 0;
 }
