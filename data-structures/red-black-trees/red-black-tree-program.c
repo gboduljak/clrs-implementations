@@ -1,8 +1,7 @@
 #include "red-black-tree.h"
 #include <stdio.h>
 
-int main()
-{
+int main() {
   rb_tree *root = AllocateRbTree(11);
   root->color = black;
 

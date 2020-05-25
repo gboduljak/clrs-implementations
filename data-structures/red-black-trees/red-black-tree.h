@@ -2,8 +2,7 @@
 #define red 0
 #define black 1
 
-typedef struct rb_tree
-{
+typedef struct rb_tree {
   int key;
   int color;
   struct rb_tree *left;
