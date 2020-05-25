@@ -1,4 +1,3 @@
-
 #define balanced 0
 #define right_heavy 2
 #define left_heavy -2
