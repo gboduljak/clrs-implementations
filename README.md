@@ -15,7 +15,6 @@ Here is a summary of pseudocode implemented so far:
   - MergeSort
   - Maximum Subarray (Divide and Conquer, BruteForce)
 - **Sorting and Order Statistics (Chapters 6,7,8,9)**
-
   - Max Heap [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
   - HeapSort [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
   - Max Priority Queue [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-priority-queue.c)
@@ -43,4 +42,7 @@ Here is a summary of pseudocode implemented so far:
   - Red Black Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/red-black-trees/red-black-tree.c)
     - Insertion
     - Deletion
-    
+  - AVL Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/avl-trees/avl-tree.c)
+    - Insertion
+    - Deletion
+    - AVL Sort
