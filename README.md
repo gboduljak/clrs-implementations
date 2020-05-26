@@ -51,4 +51,4 @@ Here is a summary of pseudocode implemented so far:
 
 - **Advanced Design and Analysis Techniques (Chapters 15,16)**
   - Dynamic Programming
-    - rod cutting [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/rod-cutting.c)
+    - rod cutting [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/rod-cutting/rod-cutting.c)
