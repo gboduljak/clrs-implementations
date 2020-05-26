@@ -29,6 +29,7 @@ Here is a summary of pseudocode implemented so far:
   - RandomisedSelect aka QuickSelect [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/sorting/quick-sort/randomised-select.c)
 
 - **Data Structures (Chapters 10, 11, 12, 13)**
+
   - Stack
     - (array-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/stack/stack.c)
     - (doubly-linked-list-based) [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/linked-list/stack.c)
@@ -43,4 +44,11 @@ Here is a summary of pseudocode implemented so far:
   - Red Black Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/red-black-trees/red-black-tree.c)
     - Insertion
     - Deletion
-    
+  - AVL Tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/avl-trees/avl-tree.c)
+    - Insertion
+    - Deletion
+    - AVL Sort
+
+- **Advanced Design and Analysis Techniques (Chapters 15,16)**
+  - Dynamic Programming
+    - rod cutting [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/rod-cutting.c)
