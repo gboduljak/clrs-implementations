@@ -1,6 +1,6 @@
 ## 👨‍💻 CLRS Implementations
 
-This is a repository of pseudocode discussed in the main text of a classic - 📖Introduction to Algorithms, known as CLRS.
+This is a repository of pseudocode implementations discussed in the main text of a classic - 📖Introduction to Algorithms, known as CLRS.
 All implementations are written in C.
 
 The folder structure resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs.
