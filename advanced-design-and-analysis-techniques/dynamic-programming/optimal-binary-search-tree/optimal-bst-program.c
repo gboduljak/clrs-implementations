@@ -19,4 +19,5 @@ int main() {
   printf("optimal expected cost is %lf\n", result.expected_cost);
   printf("optimal bst looks like :\n");
   PrintOptimalBst(&result, n);
+  DeallocateOptimalBstTables(&result, n);
 }

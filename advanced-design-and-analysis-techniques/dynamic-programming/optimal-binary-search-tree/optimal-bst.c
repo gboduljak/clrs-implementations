@@ -37,6 +37,7 @@ optimal_bst_result OptimalBst(double *p, double *q, int n) {
   }
 
   result.e = e;
+  result.w = w;
   result.root = root;
   result.expected_cost = e[1][n];
   return result;
@@ -62,12 +63,25 @@ void PrettyPrint(const char *prefix, int **root, int i, int j, int is_left) {
   printf("%d\n", root_key);
   if (i == j)
     return;
-  PrettyPrint(concat(prefix, is_left ? "│   " : "    "), root, i, root_key - 1,
-              1);
-  PrettyPrint(concat(prefix, is_left ? "│   " : "    "), root, root_key + 1, j,
-              0);
+
+  char *next_level_prefix = concat(prefix, is_left ? "│   " : "    ");
+
+  PrettyPrint(next_level_prefix, root, i, root_key - 1, 1);
+  PrettyPrint(next_level_prefix, root, root_key + 1, j, 0);
 }
 
 void PrintOptimalBst(optimal_bst_result *result, int n) {
   PrettyPrint("", result->root, 1, n, 0);
+}
+
+void DeallocateOptimalBstTables(optimal_bst_result *result, int n) {
+  int i;
+  for (i = 0; i <= (n + 1); i++) {
+    free(result->e[i]);
+    free(result->w[i]);
+    free(result->root[i]);
+  }
+  free(result->e);
+  free(result->w);
+  free(result->root);
 }
