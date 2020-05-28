@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main() {
-  int p[] = {30, 35, 15, 5, 10, 20, 25};
+  int p[] = {5, 10, 3, 12, 5, 50, 6};
   matrix_chain_multiply_result result = MatrixChainOrder(p, 7);
   PrintMatrix(result.m, 7);
   PrintMatrix(result.s, 7);
