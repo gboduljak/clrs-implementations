@@ -1,6 +1,6 @@
 ## 👨‍💻 CLRS Implementations
 
-This is a repository of pseudocode implementations discussed in the main text of a classic - 📖Introduction to Algorithms, known as CLRS.
+This is a repository of pseudocode implementations discussed in the main text of a classic - 📖 Introduction to Algorithms, known as CLRS.
 All implementations are written in C.
 
 The folder structure resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs.
@@ -8,7 +8,7 @@ For example, along with [heap implementation](https://github.com/gboduljak/clrs-
 
 Also, although the pseudocode in the book may not have the best variable naming, I have decided to respect it for the sake of consistency.
 
-Here is a summary of pseudocode implemented so far:
+Here is a table of contents of pseudocode implemented so far:
 
 - **Foundations (Chapters 2,3,4)** [🔗](https://github.com/gboduljak/clrs-implementations/tree/master/foundations)
   - InsertionSort
@@ -49,7 +49,8 @@ Here is a summary of pseudocode implemented so far:
     - Deletion
     - AVL Sort
 
-- **Advanced Design and Analysis Techniques (Chapters 15,16)**
+- **Advanced Design and Analysis Techniques (Chapters 15, 16)**
   - Dynamic Programming
     - rod cutting [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/rod-cutting/rod-cutting.c)
     - matrix chain multiplication [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/matrix-chain-multiplication/matrix-chain-multiply.c)
+    - longest common subsequence [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-common-subsequence/longest-common-subsequence.c)

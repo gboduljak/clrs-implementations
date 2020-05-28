@@ -16,4 +16,6 @@ int main() {
   PrintLcs(result.b, x, y, m - 1, n - 1);
   free(x);
   free(y);
+  free(result.b);
+  free(result.c);
 }
