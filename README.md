@@ -10,11 +10,11 @@ Also, although the pseudocode in the book may not have the best variable naming,
 
 Here is a table of contents of pseudocode implemented so far:
 
-- **Foundations (Chapters 2,3,4)** [🔗](https://github.com/gboduljak/clrs-implementations/tree/master/foundations)
+- **Foundations (Chapters 2, 3, 4)** [🔗](https://github.com/gboduljak/clrs-implementations/tree/master/foundations)
   - InsertionSort
   - MergeSort
   - Maximum Subarray (Divide and Conquer, BruteForce)
-- **Sorting and Order Statistics (Chapters 6,7,8,9)**
+- **Sorting and Order Statistics (Chapters 6, 7, 8, 9)**
 
   - Max Heap [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
   - HeapSort [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c)
@@ -54,3 +54,4 @@ Here is a table of contents of pseudocode implemented so far:
     - rod cutting [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/rod-cutting/rod-cutting.c)
     - matrix chain multiplication [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/matrix-chain-multiplication/matrix-chain-multiply.c)
     - longest common subsequence [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-common-subsequence/longest-common-subsequence.c)
+    - optimal binary search tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/optimal-binary-search-tree/optimal-bst.c)
