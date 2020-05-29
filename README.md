@@ -56,3 +56,5 @@ Here is a table of contents of pseudocode implemented so far:
     - longest common subsequence [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-common-subsequence/longest-common-subsequence.c)
     - optimal binary search tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/optimal-binary-search-tree/optimal-bst.c)
     - longest path in a dag [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-path-dag/longest-path.c)
+    - longest palindromic subsequence [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-palindromic-subsequence/longest-palindromic-subsequence.c)
+      - implemented as longest-common-subsequence(input, reversed(input)) 
