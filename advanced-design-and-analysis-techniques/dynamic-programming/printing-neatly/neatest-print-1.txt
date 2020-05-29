@@ -1,0 +1,4 @@
+Some books on algorithms are rigorous but incomplete; others
+cover masses of material but lack rigor. Introduction to
+Algorithms uniquely combines rigor and comprehensiveness. The
+book covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers.
