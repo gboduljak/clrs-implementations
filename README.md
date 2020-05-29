@@ -58,3 +58,5 @@ Here is a table of contents of pseudocode implemented so far:
     - longest path in a dag [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-path-dag/longest-path.c)
     - longest palindromic subsequence [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-palindromic-subsequence/longest-palindromic-subsequence.c)
       - implemented as longest-common-subsequence(input, reversed(input)) 
+    - printing neatly [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/printing-neatly/printing-neatly.c)
+      - also known as a variant of the word wrap problem
