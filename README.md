@@ -60,3 +60,5 @@ Here is a table of contents of pseudocode implemented so far:
       - implemented as longest-common-subsequence(input, reversed(input)) 
     - printing neatly [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/printing-neatly/printing-neatly.c)
       - also known as a variant of the word wrap problem
+  - Greedy
+    - activity scheduling [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/activity-scheduling/activity-selector.c)
