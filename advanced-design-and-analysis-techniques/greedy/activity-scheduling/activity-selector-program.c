@@ -18,6 +18,7 @@ int main()
   // assumes the activities are sorted by finishing time in nondecreasing order
   linked_list *schedule = AllocateLinkedList();
   schedule = RecursiveActivitySelector(schedule, s, f, -1, n);
+  schedule = GreedyActivitySelector(s, f, n);
 
   PrintSchedule(schedule, schedule->nil->next);
   DellocateLinkedList(schedule);
