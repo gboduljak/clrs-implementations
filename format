@@ -2,4 +2,5 @@ sh ./clang-format-all foundations
 sh ./clang-format-all sorting
 sh ./clang-format-all data-structures
 sh ./clang-format-all advanced-design-and-analysis-techniques/dynamic-programming
+sh ./clang-format-all advanced-design-and-analysis-techniques/greedy
 sh ./clang-format-all graph-algorithms
