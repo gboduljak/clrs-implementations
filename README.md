@@ -68,3 +68,6 @@ Here is a table of contents of pseudocode implemented so far:
       - The algorithm implemented [🔗 here](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/interval-graph-coloring/interval-graph-scheduler.c) has O(nlogn) time complexity. All data structures used (min priority queue, doubly linked list) are implemented in the corresponding folders in this repository.
     - Huffman codes [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c)
       - A small program to print the generated prefix code [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman-program.c)
+- **Graph algorithms (Chapters 22, 23, 24, 25)**
+  - Elementary
+      - BFS [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/bfs/bfs.c)
