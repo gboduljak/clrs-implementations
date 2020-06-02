@@ -1,6 +1,6 @@
 ## 👨‍💻 CLRS Implementations
 
-This is a repository of pseudocode implementations discussed in the main text of a classic - 📖 Introduction to Algorithms, known as CLRS. The focus is on the main text, but I have chosen to implement some interesting end of chapter problems, especially ones related to dynamic programming, trees and graphs.
+This is a repository of pseudocode implementations discussed in the main text of a classic - 📖 Introduction to Algorithms, known as CLRS.
 All implementations are written in C.
 
 The folder structure resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs.
@@ -61,8 +61,6 @@ Here is a table of contents of pseudocode implemented so far:
     - printing neatly [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/printing-neatly/printing-neatly.c)
       - also known as a variant of the word wrap problem
      - simplified-edit-distance [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/simplified-edit-distance/simplified-edit-distance.c)
-     - coin-changing [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/coin-changing//coin-changing.c)
-        - presented as end of chapter problem 16.1.d)
   - Greedy
     - activity scheduling [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/activity-scheduling/activity-selector.c)
     - interval graph coloring(scheduling) - exercise 16.1.4 

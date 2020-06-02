@@ -20,7 +20,6 @@ void DellocateLinkedListNode(linked_list *list, linked_list_node *node) {
 }
 
 void DellocateLinkedList(linked_list *list) {
-  linked_list_node *node = list->nil;
   DellocateLinkedListNode(list, list->nil->next);
   free(list);
 }
