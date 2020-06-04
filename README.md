@@ -71,5 +71,6 @@ Here is a table of contents of pseudocode implemented so far:
 - **Graph algorithms (Chapters 22, 23, 24, 25)**
   - Elementary
       - BFS [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/bfs/bfs.c)
+        - performs unweighted shortest path computation
       - DFS [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/dfs/dfs.c)
-
+        - performs vertex timestamping and edge classification
