@@ -31,5 +31,17 @@ int main() {
     printf("finishing time of  %d is %d\n", s, result.f[u]);
     printf("\n");
   }
+
+  const char *edge_classes[4] = {"tree", "back", "forward", "cross"};
+
+  for (u = 0; u < vertices_n; u++) {
+    linked_list_node *v_node = g.Adj[u]->nil->next;
+    while (v_node != g.Adj[u]->nil) {
+      v = v_node->key;
+      printf("edge (%d,%d) is a %s edge.\n", u, v,
+             edge_classes[result.e[u][v]]);
+      v_node = v_node->next;
+    }
+  }
   return 0;
 }
