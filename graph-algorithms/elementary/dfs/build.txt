@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out dfs-program.c dfs.c "../../../data-structures/linked-list/linked-list.c"
