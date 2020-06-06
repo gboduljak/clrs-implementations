@@ -81,3 +81,7 @@ Here is a table of contents of pseudocode implemented so far:
       - Strongly connected components of a directed graph
         - Kosaraju's 'two pass' implementation [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/strongly-connected-components/kosaraju/kosaraju.c)
           - implemented with the aid of dfs-based topological sort, also implemented above
+      - Biconnected components of an undirected graph
+        - Hopcroft-Tarjan's algorithm for detecting articulation points and bridges [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/biconnected-components/hopcroft-tarjan/hopcroft_tarjan.c)
+          - Detects bridges
+          - Detects articulation points
