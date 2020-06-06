@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out scc-program.c kosaraju.c "../../topological-sort/dfs/topological-sort.c" "../../../../data-structures/linked-list/linked-list.c"

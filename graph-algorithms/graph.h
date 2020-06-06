@@ -1,5 +1,8 @@
 #include "../data-structures/linked-list/linked-list.h"
 
+#ifndef GRAPH_H
+#define GRAPH_H
+
 #define white 0
 #define gray 1
 #define black 2
@@ -12,3 +15,5 @@ typedef struct graph {
   int V;
   int E;
 } graph;
+
+#endif

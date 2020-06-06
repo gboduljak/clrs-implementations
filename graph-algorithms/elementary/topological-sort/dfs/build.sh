@@ -1,1 +1,1 @@
-gcc -g -Wall -o a.out topological-sort-program.c topological-sort.c "../../../../data-structures/linked-list/linked-list.c"
+gcc -g -Wall -o a.out topological-sort-program.c topological-sort.c "../../../../data-structures/linked-list/linked-list.c" "../../topological-sort/dfs/topological-sort.c"
