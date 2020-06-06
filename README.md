@@ -61,6 +61,8 @@ Here is a table of contents of pseudocode implemented so far:
     - printing neatly [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/printing-neatly/printing-neatly.c)
       - also known as a variant of the word wrap problem
      - simplified-edit-distance [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/simplified-edit-distance/simplified-edit-distance.c)
+     - coin changing [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/coin-changing/coin-changing.c)
+       - classical dynamic programming problem, presented as exercise 16.1.d)
   - Greedy
     - activity scheduling [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/activity-scheduling/activity-selector.c)
     - interval graph coloring(scheduling) - exercise 16.1.4 
