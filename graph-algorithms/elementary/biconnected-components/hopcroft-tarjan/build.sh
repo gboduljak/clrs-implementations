@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out hopcroft-tarjan-program.c hopcroft_tarjan.c "../../../../data-structures/linked-list/linked-list.c" "../../../../data-structures/linked-list/stack.c"  "../../topological-sort/dfs/topological-sort.c"

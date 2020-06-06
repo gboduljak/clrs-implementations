@@ -10,10 +10,18 @@
 #define NIL_VERTEX -1
 #define infinity (1 << 28)
 
+typedef struct edge {
+  int u;
+  int v;
+  int weight;
+  int id;
+} edge;
+
 typedef struct graph {
   linked_list **Adj;
   int V;
   int E;
+  edge *edges;
 } graph;
 
 #endif
