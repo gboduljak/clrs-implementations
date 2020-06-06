@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out topological-sort-program.c kahn.c "../../../../data-structures/linked-list/linked-list.c" "../../../../data-structures/linked-list/queue.c"
