@@ -77,4 +77,7 @@ Here is a table of contents of pseudocode implemented so far:
       - Topological Sorting
         - classical dfs-based implementation [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/topological-sort/dfs/topological-sort.c)
         - Kahn's algorithm implementation [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/topological-sort/kahn-algorithm/kahn.c)
-        - Both implementations come with a simple program in the same directory which performs topological sort of a textbook 'clothing' directed acyclic graph
+        - both implementations come with a simple program in the same directory which performs topological sort of a textbook 'clothing' directed acyclic graph
+      - Strongly connected components of a directed graph
+        - Kosaraju's 'two pass' implementation [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/strongly-connected-components/kosaraju/kosaraju.c)
+          - implemented with the aid of dfs-based topological sort, also implemented above
