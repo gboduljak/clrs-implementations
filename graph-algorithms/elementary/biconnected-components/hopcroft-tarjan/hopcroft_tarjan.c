@@ -47,8 +47,6 @@ void HcDfsVisit(graph *g, hopcroft_tarjan_result *result,
     if (color[v] == white) {
       p[v] = u;
       children_count++;
-      Push(edges_stack, u);
-      Push(edges_stack, v);
 
       HcDfsVisit(g, result, hc_structures, v);
 
@@ -73,8 +71,7 @@ void HcDfsVisit(graph *g, hopcroft_tarjan_result *result,
         result->bridges_count = bridges_count;
       }
     } else if (v != p[u] && low[u] > d[v]) // color[v] = gray
-      low[u] = Min(low[u], d[v]), Push(edges_stack, u),
-      Push(edges_stack, v); // back edge to v
+      low[u] = Min(low[u], d[v]);          // back edge to v
     v_node = v_node->next;
   }
   time++;
