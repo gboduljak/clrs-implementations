@@ -96,3 +96,6 @@ Here is a table of contents of pseudocode implemented so far:
   - **Hopcroft-Tarjan**'s algorithm for detecting articulation points and bridges [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/biconnected-components/hopcroft-tarjan/hopcroft_tarjan.c)
     - Detects bridges
     - Detects articulation points
+#### Minimum Spanning Tree (Chapter 23)
+  - **Prim's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/prim/prim.c)
+    
