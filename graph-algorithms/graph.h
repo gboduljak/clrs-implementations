@@ -22,6 +22,7 @@ typedef struct graph {
   int V;
   int E;
   edge *edges;
+  int **weight;
 } graph;
 
 #endif

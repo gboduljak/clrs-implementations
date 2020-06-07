@@ -72,6 +72,11 @@ void MaxPqSiftUp(priority_queue *pq, int i) {
   }
 }
 
+int MaxPqLookupKey(priority_queue *pq, int id) {
+  int element_position = pq->position_of_id[id];
+  return pq->heap[element_position];
+}
+
 void MaxPqIncreaseKey(priority_queue *pq, int id, int new_key) {
   int element_position = pq->position_of_id[id];
   pq->heap[element_position] = new_key;

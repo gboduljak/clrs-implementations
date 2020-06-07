@@ -20,6 +20,10 @@ priority_queue_element *MinPqInsert(priority_queue *pq, int id, int key) {
   return element;
 }
 
+int MinPqLookupKey(priority_queue *pq, int id) {
+  return -MaxPqLookupKey(pq, id);
+}
+
 void MinPqDecreaseKey(priority_queue *pq, int i, int new_key) {
   MaxPqIncreaseKey(pq, i, -new_key);
 }
