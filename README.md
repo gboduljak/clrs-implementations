@@ -98,5 +98,7 @@ Here is a table of contents of pseudocode implemented so far:
     - Detects articulation points
 #### Minimum Spanning Tree (Chapter 23)
   - **Prim's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/prim/prim.c)
-    - returns both the cost and the tree edges set
-    
+    - computes the cost and the tree edges set
+  - **Kruskal's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/kruskal/kruskal.c)
+    - computes the cost and the tree edges set
+  
