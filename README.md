@@ -50,6 +50,8 @@ Here is a table of contents of pseudocode implemented so far:
 - **AVL Tree** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/avl-trees/avl-tree.c)
   - AVL Sort
   - All discussed BST operations, along with AVL Insert and Delete
+- **Disjoint Set Union [🔗](https://github.com/gboduljak/clrs-implementations/tree/master/data-structures/disjoint-set-union/dsu.c)**
+  - implemented path compression and union by rank heuristics
 
 ### Advanced Design and Analysis Techniques (Chapters 15, 16)
 
