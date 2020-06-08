@@ -3,18 +3,11 @@
 #include "stdlib.h"
 
 int cycle_completed = 0;
-typedef struct hierholzer_structures {
-  int *out_degree;
-  linked_list *vertices_to_consider;
-  linked_list_node *vertices_to_consider_lookup;
-} hierholzer_structures;
 
-void HierholzerDfs(graph *g, hierholzer_structures structs, queue *cycle, int w,
-                   int u) {
+void HierholzerDfs(graph *g, int *out_degree, queue *cycle, int w, int u) {
   if (cycle_completed)
     return;
 
-  int *out_degree = structs.out_degree;
   linked_list_node *v_node;
   int v;
 
@@ -29,7 +22,7 @@ void HierholzerDfs(graph *g, hierholzer_structures structs, queue *cycle, int w,
     if (v == w)
       cycle_completed = 1, Enqueue(cycle, w);
     else
-      HierholzerDfs(g, structs, cycle, w, v);
+      HierholzerDfs(g, out_degree, cycle, w, v);
 
     v_node = v_node->next;
   }
@@ -43,9 +36,6 @@ linked_list *Hierholzer(graph *g, int s) {
   int *out_degree = (int *)malloc(sizeof(int) * (g->V + 1));
   queue *cycle;
   int u, v;
-
-  hierholzer_structures structs;
-  structs.out_degree = out_degree;
 
   for (u = 0; u < g->V; u++) {
     out_degree[u] = 0;
@@ -64,7 +54,7 @@ linked_list *Hierholzer(graph *g, int s) {
 
   cycle = AllocateQueue();
   cycle_completed = 0;
-  HierholzerDfs(g, structs, cycle, s, s);
+  HierholzerDfs(g, out_degree, cycle, s, s);
 
   while (!QueueEmpty(cycle)) {
     u = cycle->q->nil->prev->key;
@@ -78,7 +68,7 @@ linked_list *Hierholzer(graph *g, int s) {
     cycle = AllocateQueue();
     cycle_completed = 0;
 
-    HierholzerDfs(g, structs, cycle, extension_vertex->key,
+    HierholzerDfs(g, out_degree, cycle, extension_vertex->key,
                   extension_vertex->key);
 
     linked_list *extension_cycle = AllocateLinkedList();
