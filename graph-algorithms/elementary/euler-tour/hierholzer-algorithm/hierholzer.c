@@ -3,8 +3,6 @@
 #include "stdlib.h"
 
 int cycle_completed = 0;
-int next_vertex_to_consider;
-
 typedef struct hierholzer_structures {
   int *out_degree;
   linked_list *vertices_to_consider;
