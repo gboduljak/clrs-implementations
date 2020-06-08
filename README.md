@@ -51,7 +51,7 @@ Here is a table of contents of pseudocode implemented so far:
   - AVL Sort
   - All discussed BST operations, along with AVL Insert and Delete
 
-### Advanced Design and Analysis Techniques  (Chapters 15, 16)
+### Advanced Design and Analysis Techniques (Chapters 15, 16)
 
 #### Dynamic Programming (Chapter 15)
 
@@ -61,23 +61,23 @@ Here is a table of contents of pseudocode implemented so far:
 - optimal binary search tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/optimal-binary-search-tree/optimal-bst.c)
 - longest path in a dag [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-path-dag/longest-path.c)
 - longest palindromic subsequence [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/longest-palindromic-subsequence/longest-palindromic-subsequence.c)
-  - implemented as longest-common-subsequence(input, reversed(input)) 
+  - implemented as longest-common-subsequence(input, reversed(input))
 - printing neatly [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/printing-neatly/printing-neatly.c)
   - also known as a variant of the word wrap problem
- - simplified-edit-distance [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/simplified-edit-distance/simplified-edit-distance.c)
- - coin changing [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/coin-changing/coin-changing.c)
-   - classical dynamic programming problem, presented as exercise 16.1.d)
+- simplified-edit-distance [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/simplified-edit-distance/simplified-edit-distance.c)
+- coin changing [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/coin-changing/coin-changing.c)
+  - classical dynamic programming problem, presented as exercise 16.1.d)
 
 #### Greedy (Chapter 16)
 
 - activity scheduling [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/activity-scheduling/activity-selector.c)
-- interval graph coloring(scheduling) - exercise 16.1.4 
-  - We are given **n** activities to be held in some lecture halls. For each activity we know its starting time, finishing time and id. Any activity can take place in any lecture hall. Design a fast greedy algorithm to determine the minimal number of lecture halls required to ensure all activities can happen. Algorithm should also determine activity schedule taking place in each lecture hall used. 
+- interval graph coloring(scheduling) - exercise 16.1.4
+  - We are given **n** activities to be held in some lecture halls. For each activity we know its starting time, finishing time and id. Any activity can take place in any lecture hall. Design a fast greedy algorithm to determine the minimal number of lecture halls required to ensure all activities can happen. Algorithm should also determine activity schedule taking place in each lecture hall used.
   - The algorithm implemented [🔗 here](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/interval-graph-coloring/interval-graph-scheduler.c) has O(nlogn) time complexity. All data structures used (min priority queue, doubly linked list) are implemented in the corresponding folders in this repository.
 - Huffman codes [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c)
   - A small program to print a generated prefix code [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman-program.c)
 
-### Graph Algorithms  (Chapters 22, 23, 24, 25)
+### Graph Algorithms (Chapters 22, 23, 24, 25)
 
 #### Elementary (Chapter 22)
 
@@ -96,9 +96,13 @@ Here is a table of contents of pseudocode implemented so far:
   - **Hopcroft-Tarjan**'s algorithm for detecting articulation points and bridges [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/biconnected-components/hopcroft-tarjan/hopcroft_tarjan.c)
     - Detects bridges
     - Detects articulation points
+- An Euler tour of a Directed Graph
+  - presented as the problem in End of Chapter 22 problems
+  - implemented **Hierholzer's algorithm**
+
 #### Minimum Spanning Tree (Chapter 23)
-  - **Prim's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/prim/prim.c)
-    - computes the cost and the tree edges set
-  - **Kruskal's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/kruskal/kruskal.c)
-    - computes the cost and the tree edges set
-  
+
+- **Prim's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/prim/prim.c)
+  - computes the cost and the tree edges set
+- **Kruskal's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/kruskal/kruskal.c)
+  - computes the cost and the tree edges set

@@ -14,7 +14,9 @@ typedef struct linked_list {
 linked_list *AllocateLinkedList();
 void DellocateLinkedList();
 linked_list_node *ListInsert(linked_list *list, int x);
+linked_list_node *ListInsertBack(linked_list *list, int x);
+linked_list_node *ListReplace(linked_list *list, linked_list_node *x,
+                              linked_list *y);
 linked_list_node *ListSearch(linked_list *list, int k);
 void ListDelete(linked_list *list, linked_list_node *node);
-
 #endif
