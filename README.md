@@ -100,7 +100,7 @@ Here is a table of contents of pseudocode implemented so far:
     - Detects articulation points
 - An Euler tour of a Directed Graph
   - presented as the problem in End of Chapter 22 problems
-  - implemented **Hierholzer's algorithm**
+  - implemented **Hierholzer's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/euler-tour/hierholzer-algorithm/hierholzer.c)
 
 #### Minimum Spanning Tree (Chapter 23)
 
