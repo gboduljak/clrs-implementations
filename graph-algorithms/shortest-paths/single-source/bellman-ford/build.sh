@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out bellman-ford-program.c bellman-ford.c "../../initialize-single-source.c" "../../relax.c" "../../../../data-structures/linked-list/linked-list.c" 

@@ -108,3 +108,9 @@ Here is a table of contents of pseudocode implemented so far:
   - computes the cost and the tree edges set
 - **Kruskal's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/minimum-spanning-trees/kruskal/kruskal.c)
   - computes the cost and the tree edges set
+
+#### Single Source Shortest Paths (Chapter 24)
+
+- **The Bellman-Ford algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/single-source/bellman-ford/bellman-ford.c)
+  - detects existence of a negative-weight cycle reachable from source vertex
+  - in case there is no negative-weight cycle reachable from source vertex, the algorithm returns the shortest path from s to every vertex v in the input graph
