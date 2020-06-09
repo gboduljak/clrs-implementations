@@ -13,7 +13,7 @@ bellman_ford_result BellmanFord(graph *g, int s) {
     for (j = 0; j < g->E; j++)
       Relax(structs, g->edges + j);
 
-  for (j = 0; j < g->E && result.has_negative_weight_cycle; j++) {
+  for (j = 0; j < g->E && !result.has_negative_weight_cycle; j++) {
     int d_before_relax = d[(g->edges[j]).v];
     Relax(structs, g->edges + j);
     int d_after_relax = d[(g->edges[j]).v];
