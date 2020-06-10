@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out dag-shortest-path-program.c dag-shortest-path.c "../../initialize-single-source.c" "../../relax.c" "../../../elementary/topological-sort/dfs/topological-sort.c" "../../../../data-structures/linked-list/linked-list.c" 

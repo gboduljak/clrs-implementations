@@ -98,7 +98,7 @@ Here is a table of contents of pseudocode implemented so far:
   - **Hopcroft-Tarjan**'s algorithm for detecting articulation points and bridges [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/biconnected-components/hopcroft-tarjan/hopcroft_tarjan.c)
     - Detects bridges
     - Detects articulation points
-- An Euler tour of a Directed Graph
+- An Euler tour of a directed graph
   - presented as the problem in End of Chapter 22 problems
   - implemented **Hierholzer's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/euler-tour/hierholzer-algorithm/hierholzer.c)
 
@@ -113,4 +113,6 @@ Here is a table of contents of pseudocode implemented so far:
 
 - **The Bellman-Ford algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/single-source/bellman-ford/bellman-ford.c)
   - detects existence of a negative-weight cycle reachable from source vertex
-  - in case there is no negative-weight cycle reachable from source vertex, the algorithm returns the shortest path from s to every vertex v in the input graph
+  - in case there is no negative-weight cycle reachable from source vertex, the algorithm returns the shortest path from s to every vertex v in the input graph as well as the shortest path tree rooted at s
+- **Shortest Path in a directed acyclic graph using Topological Sort + Relax ** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/single-source/directed-acyclic-graph/dag-shortest-path.c)
+  - the algorithm returns the shortest path from s to every vertex v in the input graph as well as the shortest path tree rooted at s
