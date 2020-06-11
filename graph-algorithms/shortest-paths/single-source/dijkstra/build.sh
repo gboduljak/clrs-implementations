@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out dijkstra-program.c dijkstra.c "../../initialize-single-source.c" "../../relax.c" "../../../../data-structures/linked-list/linked-list.c" "../../../../data-structures/heaps/max-priority-queue.c"  "../../../../data-structures/heaps/min-priority-queue.c" 
