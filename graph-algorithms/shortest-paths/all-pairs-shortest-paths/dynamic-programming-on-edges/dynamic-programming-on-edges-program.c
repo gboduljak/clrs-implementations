@@ -33,17 +33,31 @@ int main() {
     g.weight[u][v] = w;
   }
 
-  shortest_paths result = SlowAllPairsShortestPaths(&g);
+  shortest_paths slow_result = SlowAllPairsShortestPaths(&g);
+  shortest_paths fast_result = FasterAllPairsShortestPaths(&g);
 
-  printf("shortest paths matrix: \n");
+  printf("slow shortest paths matrix: \n");
   for (u = 1; u < vertices_n; u++) {
     for (v = 1; v < vertices_n; v++)
-      printf("%d ", result.d[u][v]);
+      printf("%d ", slow_result.d[u][v]);
     printf("\n");
   }
   for (u = 1; u < vertices_n; u++)
     for (v = 1; v < vertices_n; v++)
-      printf("shortest path cost from %d to %d is %d\n", u, v, result.d[u][v]);
+      printf("slow shortest path cost from %d to %d is %d\n", u, v,
+             slow_result.d[u][v]);
+
+  printf("\n");
+  printf("faster shortest paths matrix: \n");
+  for (u = 1; u < vertices_n; u++) {
+    for (v = 1; v < vertices_n; v++)
+      printf("%d ", fast_result.d[u][v]);
+    printf("\n");
+  }
+  for (u = 1; u < vertices_n; u++)
+    for (v = 1; v < vertices_n; v++)
+      printf("faster shortest path cost from %d to %d is %d\n", u, v,
+             fast_result.d[u][v]);
 
   return 0;
 }
