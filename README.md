@@ -119,3 +119,9 @@ Here is a table of contents of pseudocode implemented so far:
 - **Dijkstra's algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/single-source/dijkstra/dijkstra.c)
   - computes the shortest path weights and shortest path tree from a source vertex s
   - implemented with a Min Priority Queue
+
+#### All Pairs Shortest Paths (Chapter 25)
+
+- **'Slow all pairs shortest paths'** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/dynamic-programming-on-edges/dynamic-programming-on-edges.c)
+  - This algorithm is based on dynamic programming on edges and has worst case complexity O(|V|^4)
+  - The algorithm is developed 'from scratch' in the textbook Chapter 25.1
