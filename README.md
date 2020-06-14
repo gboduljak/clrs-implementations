@@ -129,4 +129,4 @@ Here is a table of contents of pseudocode implemented so far:
   - An algebraically optimised version of the same algorithm is also implemented [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/dynamic-programming-on-edges/dynamic-programming-on-edges.c), having worst case complexity O(|V|^3 log(|V|))
 
 - **'Floyd-Warshall algorithm'** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/floyd-warshall/floyd-warshall.c)
-  - Implemented both shortest path cost and actual path computation for every vertex pair
+  - Implemented both shortest path cost computation and path reconstruction for every vertex pair
