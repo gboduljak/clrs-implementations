@@ -137,17 +137,16 @@ Also, although the pseudocode in the book may not have the best variable naming,
   - This algorithm is based on dynamic programming on edges and has worst case complexity O(|V|^4)
   - The algorithm is developed 'from scratch' in the textbook Chapter 25.1
   - An algebraically optimised version of the same algorithm is also implemented [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/dynamic-programming-on-edges/dynamic-programming-on-edges.c), having worst case complexity O(|V|^3 log(|V|))
+   - Implemented both shortest path cost computation and path reconstruction for every vertex pair (non-optimised version only)
+
 
 - **Floyd-Warshall algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/floyd-warshall/floyd-warshall.c)
-
   - Implemented both shortest path cost computation and path reconstruction for every vertex pair
 
 - **Transitive closure algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/transitive-closure/transitive-closure.c)
   - Adapted Floyd-Warshall's procedure
 
 #### Favorites 
-
-Here are my favourite implemented algorithms, coming with some visualisations.
 
 ![huffman codes](./readme-resources/huffman-codes.png) 
 <br/>
