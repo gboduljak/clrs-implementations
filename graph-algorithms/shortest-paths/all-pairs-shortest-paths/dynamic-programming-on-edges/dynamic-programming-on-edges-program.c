@@ -42,10 +42,17 @@ int main() {
       printf("%d ", slow_result.d[u][v]);
     printf("\n");
   }
-  for (u = 1; u < vertices_n; u++)
-    for (v = 1; v < vertices_n; v++)
-      printf("slow shortest path cost from %d to %d is %d\n", u, v,
-             slow_result.d[u][v]);
+
+  for (i = 1; i < vertices_n; i++) {
+    for (j = 1; j < vertices_n; j++) {
+      printf("slow shortest path cost from %d to %d is %d\n", i, j,
+             slow_result.d[i][j]);
+      printf("shortest path from %d to %d is: ", i, j);
+      PrintSlowAllPairsShortestPaths(slow_result, i, j);
+      printf("\n");
+      printf("\n");
+    }
+  }
 
   printf("\n");
   printf("faster shortest paths matrix: \n");
