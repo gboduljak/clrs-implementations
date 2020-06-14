@@ -1,6 +1,6 @@
 ## 👨‍💻 CLRS Implementations
 
-This is a repository of pseudocode implementations discussed in the main text of a classic - 📖 Introduction to Algorithms, known as CLRS. There are some great solution manuals for more theoretical problems, such as https://walkccc.github.io/CLRS/, so I have decided to focus only on the main text pseudocode and personally more interesing exercises.
+This is a repository of pseudocode implementations discussed in the main text of a classic - 📖 Introduction to Algorithms, widely known as CLRS. There are some great solution manuals for more theoretical problems, such as https://walkccc.github.io/CLRS/, so I have decided to focus only on the main text pseudocode and personally more interesing exercises.
 All implementations are written in C and should be cross-platform.
 
 The folder structure of this repository resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs. 
