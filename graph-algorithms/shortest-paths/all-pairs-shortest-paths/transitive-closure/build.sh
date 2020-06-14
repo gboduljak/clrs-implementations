@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out transitive-closure-program.c transitive-closure.c "../../../../data-structures/linked-list/linked-list.c" 
