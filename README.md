@@ -5,6 +5,7 @@ All implementations are written in C.
 
 The folder structure resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs.
 For example, along with [an implementation of Huffman coding algorihm](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c) there is [a small program](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman-program.c) to print a generated prefix code.
+<br/>
 ![huffman codes](./readme-resources/huffman-codes.png) 
 <br/>
 
@@ -145,7 +146,7 @@ Also, although the pseudocode in the book may not have the best variable naming,
 
 #### Favorites 
 
-Here are my favourite algorithms implemented, coming with some visualisations.
+Here are my favourite implemented algorithms, coming with some visualisations.
 
 ![huffman codes](./readme-resources/huffman-codes.png) 
 <br/>
