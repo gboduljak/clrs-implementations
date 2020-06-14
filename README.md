@@ -1,15 +1,16 @@
 ## 👨‍💻 CLRS Implementations
 
-This is a repository of pseudocode implementations discussed in the main text of a classic - 📖 Introduction to Algorithms, known as CLRS.
-All implementations are written in C.
+This is a repository of pseudocode implementations discussed in the main text of a classic - 📖 Introduction to Algorithms, known as CLRS. There are some great solution manuals for more theoretical problems, such as https://walkccc.github.io/CLRS/, so I have decided to focus only on the main text pseudocode and personally more interesing exercises.
+All implementations are written in C and should be cross-platform.
 
-The folder structure resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs.
-For example, along with [an implementation of Huffman coding algorihm](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c) there is [a small program](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman-program.c) to print a generated prefix code.
+The folder structure of this repository resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs. 
+For example, along with [an implementation of Huffman coding algorihm](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c) there is [a small program](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman-program.c) to print the generated prefix code. 
 <br/>
 ![huffman codes](./readme-resources/huffman-codes.png) 
 <br/>
+For some "heavier" implementations, depending on some data structures or algorithms, there is also a small bash script in the implementation folder to aid compilation.
 
-Also, although the pseudocode in the book may not have the best variable naming, I have decided to respect it for the sake of consistency.
+Also, although the pseudocode in the book may not have the best variable naming, I have decided to respect it for the sake of consistency. However, I did not respect pseudocode conventions when it comes to implementations of algorithms presented as exercise problems or as end of chapter problems.
 
 #### Table of Contents
 1. [Foundations](#foundations-chapters-2-3-4-)
@@ -171,4 +172,4 @@ scheduling lectures with interval graph coloring  [🔗](https://github.com/gbod
 
 ![topsort](./readme-resources/topsort-clothing.png) 
 <br/>
-Topological sorting of a 'clothing' graph [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/topological-sort/dfs/topological-sort.c) - a nice 'real-world' example of topological sorting graph algorithm
+topological sorting of a 'clothing' graph [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/topological-sort/dfs/topological-sort.c) - a nice 'real-world' example of topological sorting graph algorithm
