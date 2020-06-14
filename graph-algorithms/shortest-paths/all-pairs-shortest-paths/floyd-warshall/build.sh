@@ -1,0 +1,1 @@
+gcc -g -Wall -o a.out floyd-warshall-program.c floyd-warshall.c "../../../../data-structures/linked-list/linked-list.c" 

@@ -123,6 +123,10 @@ Here is a table of contents of pseudocode implemented so far:
 #### All Pairs Shortest Paths (Chapter 25)
 
 - **'Slow all pairs shortest paths'** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/dynamic-programming-on-edges/dynamic-programming-on-edges.c)
+
   - This algorithm is based on dynamic programming on edges and has worst case complexity O(|V|^4)
   - The algorithm is developed 'from scratch' in the textbook Chapter 25.1
   - An algebraically optimised version of the same algorithm is also implemented [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/dynamic-programming-on-edges/dynamic-programming-on-edges.c), having worst case complexity O(|V|^3 log(|V|))
+
+- **'Floyd-Warshall algorithm'** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/floyd-warshall/floyd-warshall.c)
+  - Implemented both shortest path cost and actual path computation for every vertex pair
