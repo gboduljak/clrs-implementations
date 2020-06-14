@@ -4,31 +4,19 @@ This is a repository of pseudocode implementations discussed in the main text of
 All implementations are written in C.
 
 The folder structure resembles the book structure. Usually, implementations come with small auxiliary programs and simple test inputs.
-For example, along with [heap implementation](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap.c) there is a small [heap program](https://github.com/gboduljak/clrs-implementations/blob/master/data-structures/heaps/max-heap-program.c) used to demonstrate heap operations.
+For example, along with [an implementation of Huffman coding algorihm](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c) there is [a small program](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman-program.c) to print a generated prefix code.
+![huffman codes](./readme-resources/huffman-codes.png) 
+<br/>
 
 Also, although the pseudocode in the book may not have the best variable naming, I have decided to respect it for the sake of consistency.
 
-Here are my favourite algorithms implemented, coming with some visualisations.
-
-![huffman codes](./readme-resources/huffman-codes.png) Huffman codes [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c) - a beautiful greedy 'construction' algorithm
-
-![printing-neatly](./readme-resources/printing-neatly.png) printing neatly [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/printing-neatly/printing-neatly.c) - a neat, non obvious application of dynamic programming
-
-![optimal-bst](./readme-resources/optimal-bst.png) constructing an optimal binary search tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/optimal-binary-search-tree/optimal-bst.c)- a nice application of DP on trees  
-
-![euler-tour](./readme-resources/euler-tour.png) 
-
-constructing an Euler tour with Hierholzer's algorithm  [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/euler-tour/hierholzer-algorithm/hierholzer.c) - a nice 'construction' graph algorithm, challenging to implement in C. Presented as one of end of chapter problems.
-
-![interval-graph-coloring](./readme-resources/interval-graph-coloring.png)
-
-scheduling lectures with interval graph coloring  [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/interval-graph-coloring/interval-graph-scheduler.c) -  a nice, real world application of greedy activity scheduling. Presented as one of exercises.
-
-![topsort](./readme-resources/topsort-clothing.png) 
-
-Topological sorting of a 'clothing' graph [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/topological-sort/dfs/topological-sort.c) - a nice 'real-world' example of topological sorting graph algorithm
-
-Below is a table of contents of pseudocode implemented so far:
+#### Table of Contents
+1. [Foundations](#foundations-chapters-2-3-4-)
+2. [Data Structures](#data-structures-chapters-10-11-12-13)
+3. [Dynamic programming](#dynamic-programming-chapter-15)
+4. [Greedy](#greedy-chapter-16)
+5. [Graph algorithms](#graph-algorithms-chapters-22-23-24-25)
+6. [My favorites](#favorites)
 
 ### Foundations (Chapters 2, 3, 4) [🔗](https://github.com/gboduljak/clrs-implementations/tree/master/foundations)
 
@@ -154,3 +142,32 @@ Below is a table of contents of pseudocode implemented so far:
 
 - **Transitive closure algorithm** [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/shortest-paths/all-pairs-shortest-paths/transitive-closure/transitive-closure.c)
   - Adapted Floyd-Warshall's procedure
+
+#### Favorites 
+
+Here are my favourite algorithms implemented, coming with some visualisations.
+
+![huffman codes](./readme-resources/huffman-codes.png) 
+<br/>
+Huffman codes [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/huffman-codes/huffman.c) - a beautiful greedy 'construction' algorithm
+
+![printing-neatly](./readme-resources/printing-neatly.png) 
+<br/>
+printing neatly [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/printing-neatly/printing-neatly.c) - a neat, non obvious application of dynamic programming
+
+![optimal-bst](./readme-resources/optimal-bst.png)
+<br/>
+constructing an optimal binary search tree [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/dynamic-programming/optimal-binary-search-tree/optimal-bst.c)- a nice application of DP on trees  
+
+![euler-tour](./readme-resources/euler-tour.png)
+<br/>
+constructing an Euler tour with Hierholzer's algorithm 
+[🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/euler-tour/hierholzer-algorithm/hierholzer.c) - a nice 'construction' graph algorithm, challenging to implement in C. Presented as one of end of chapter problems.
+
+![interval-graph-coloring](./readme-resources/interval-graph-coloring.png)
+<br/>
+scheduling lectures with interval graph coloring  [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/advanced-design-and-analysis-techniques/greedy/interval-graph-coloring/interval-graph-scheduler.c) -  a nice, real world application of greedy activity scheduling. Presented as one of exercises.
+
+![topsort](./readme-resources/topsort-clothing.png) 
+<br/>
+Topological sorting of a 'clothing' graph [🔗](https://github.com/gboduljak/clrs-implementations/blob/master/graph-algorithms/elementary/topological-sort/dfs/topological-sort.c) - a nice 'real-world' example of topological sorting graph algorithm
